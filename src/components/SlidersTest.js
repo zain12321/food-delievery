@@ -32,7 +32,7 @@ export default function SlidersTest() {
     slidesToScroll: 1,
   };
   return (
-    <Slider {...settings} className="flex max-w-[500px] py-6 mx-4" >
+    <Slider {...settings} className="flex max-w-[500px] py-6 mx-2 md:mx-0" >
       {slide.map((slides) => {
         const {image, name} = slides;
         return (

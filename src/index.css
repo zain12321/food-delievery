@@ -20,7 +20,8 @@
     }
     .popular{
         @apply flex 
-        items-center font-bold text-center space-x-2 py-2 sm:px-2 hover:bg-white hover:text-black max-w-[60px] 
+        items-center font-bold text-center px-1 sm:space-x-2 
+        py-2 sm:px-2 hover:bg-white hover:text-black max-w-[75px] 
         sm:max-w-[90px] md:max-w-[100px] rounded-xl;
     }
     .pop-i{
