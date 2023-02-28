@@ -33,8 +33,8 @@ function Foods() {
         </div>
         <div>
      
-        <select
-  className='py-[5px] px-2 my-3 md:my-0 cursor-pointer rounded-full border-black border-2'
+        <select 
+  className='py-[5px] outline-none w-[250px] sm:w-[300px] px-2 my-3 md:my-0 cursor-pointer rounded-full border-black border-2'
   onChange={(event) => {
     const selectedOption = event.target.value;
     if (selectedOption === 'All') {

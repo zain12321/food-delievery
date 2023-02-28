@@ -60,7 +60,7 @@ function Message() {
              )
 				  })}
 </div>
-<div className='flex items-center space-x-3 border-t border-[#333] py-3 px-3'>
+<div className='flex items-center space-x-1 sm:space-x-3 border-t border-[#333] py-3 sm:px-3 px-[2px]'>
     <input onChange={EventChange} required maxLength={30} placeholder='Enter Your Chat' name='chat' type='chat' className='py-2 border-2 border-[#333]
     text-[#333] px-1 rounded-full'/>
     <MdAttachFile className='h-icons'/>
