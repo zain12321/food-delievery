@@ -1,8 +1,11 @@
 import React from 'react'
+import Footer from '../components/Footer'
 
 function Contact() {
   return (
-    <div>Contact</div>
+    <div className='pt-[140px]'>
+     <Footer/>
+    </div>
   )
 }
 

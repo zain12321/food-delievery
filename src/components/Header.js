@@ -27,10 +27,14 @@ function Header({darkTheme, setDarkTheme}) {
              <li  className={`${active === "Foods" ? "active h-but" : "h-but"}`}
             onClick={() => setActive("Foods")}>Foods</li>
             </Link>
-             <li  className={`${active === "Cart" ? "active h-but" : "h-but"}`}
+            <Link to='/cart'>
+            <li  className={`${active === "Cart" ? "active h-but" : "h-but"}`}
             onClick={() => setActive("Cart")}>Cart</li>
-                      <li  className={`${active === "Contact" ? "active h-but" : "h-but"}`}
+            </Link>
+            <Link to='/contact'>
+            <li  className={`${active === "Contact" ? "active h-but" : "h-but"}`}
             onClick={() => setActive("Contact")}>Contact</li>
+            </Link>
             </ul>
         </div>
         <div className='flex items-center space-x-6 relative'>
@@ -42,13 +46,16 @@ function Header({darkTheme, setDarkTheme}) {
               <Link to='/'> <li  className={`${active === "Home" ? "active h-but" : "h-but"}`}
             onClick={() => setActive("Home")}>Home</li></Link> 
             <Link to='/foods'>
-            <li  className={`${active === "Foods" ? "active h-but" : "h-but"}`}
+            <li className={`${active === "Foods" ? "active h-but" : "h-but"}`}
             onClick={() => setActive("Foods")}>Foods</li>
             </Link>
-             <li  className={`${active === "Cart" ? "active h-but" : "h-but"}`}
-            onClick={() => setActive("Cart")}>Cart</li>
-                      <li  className={`${active === "Contact" ? "active h-but" : "h-but"}`}
+            <Link to='/cart'><li  className={`${active === "Cart" ? "active h-but" : "h-but"}`}
+            onClick={() => setActive("Cart")}>Cart</li></Link>
+             <Link to='contact'>
+             <li className={`${active === "Contact" ? "active h-but" : "h-but"}`}
             onClick={() => setActive("Contact")}>Contact</li>
+             </Link>
+                    
             </ul>
             </div> : ''}
            <div className='flex items-center relative'>

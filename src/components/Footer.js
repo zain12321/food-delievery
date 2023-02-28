@@ -35,9 +35,11 @@ function Footer() {
     <div className='grid grid-cols-1 space-y-5 lg:space-y-0 lg:grid-cols-2'>
     <div className='flex flex-col space-y-1'>
             <h1 className='font-bold text-[#212245] text-[19px] dark:text-[#777777]'>Contact</h1>
-          <span className='dark:text-[#777777]'>Location: ZindaBazar, Sylhet-3100, Pakistan</span>
+            <span className='dark:text-[#777777]'>Location: Main Bazar, Dhok Kala khan,46000, Rawalpindi-Pakistan</span>
           <phone className='font-bold text-[#212245] text-[17px] dark:text-[#777777] pt-6'>Phone: 03473184343</phone>
+         <a href='https://mail.google.com/mail/u/0/#inbox?compose=new' target="_blank" rel="noopener noreferrer" >
           <email className='font-bold text-[#212245] text-[17px] dark:text-[#777777]'>Email: zainfb1122@gmail.com</email>
+          </a> 
             </div>
             <div>
             <h1 className='font-bold text-[#212245] text-[19px] dark:text-[#777777]'>Newsletter</h1>
@@ -57,9 +59,10 @@ function Footer() {
 
     </div>
     </div>
-    <div className=' grid grid-cols-1 md:grid-cols-2 mt-8 space-y-3 md:space-y-0'>
+    <div className='sm:flex items-center justify-between xl:mr-9 mt-8 space-y-3 md:space-y-0'>
         <p className='text-[14px] md:text-[16px]
-         text-[#fd2020] dark:text-[#777777]'>Copyright - 2022, website made by Muhibur Rahman. All Rights Reserved.</p>
+         text-[#fd2020] dark:text-[#777777]'>Copyright - 2023, website made by Zain Fiaz.
+          All Rights Reserved.</p>
         <div className='flex items-center space-x-1 sm:space-x-5'>
             <p className='dark:text-[#777777]'>Follow:</p>
            <div className='flex items-center space-x-3'>
@@ -74,8 +77,6 @@ function Footer() {
            </a>
             <p className='footer-l'><AiOutlineTwitter className='footer-i'/></p>
             <p className='footer-l'><IoLogoGoogle className='footer-i'/></p>
-            
-           
             </div>
         </div>
     </div>

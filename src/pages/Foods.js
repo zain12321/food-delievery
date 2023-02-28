@@ -4,6 +4,7 @@ import {FcSearch} from 'react-icons/fc'
 import { FaHamburger } from 'react-icons/fa';
 import { IoMdPizza } from 'react-icons/io';
 import { GiSlicedBread } from 'react-icons/gi';
+import Footer from '../components/Footer';
 
 function Foods() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -82,6 +83,9 @@ function Foods() {
               })
           }
           </div>
+     </div>
+     <div className='mt-11'>
+     <Footer/>
      </div>
     </div>
   )
