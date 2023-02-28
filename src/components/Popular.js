@@ -35,7 +35,7 @@ function Popular() {
     const { title,price,image} = elem;
 	return (
 <div className='border-2 flex flex-col space-y-3 items-center
-mx-2 max-w-[300px] md:max-w-[350px] py-4 border-gray-200 bg-gray-100 dark:bg-[#fde4e4]'>
+mx-2 max-w-[300px] md:max-w-[350px] py-4 border-gray-200 bg-gray-100 '>
 
 <img className='w-24 h-24 hover:scale-110 cursor-pointer translate-y-2 transition duration-500' src={image} alt='' />
 <p className='text-[#212245] font-bold text-[18px]'>{title}</p>
