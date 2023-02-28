@@ -10,7 +10,7 @@ function Footer() {
    <div className='bg-[#fde4e4] md:px-9 sm:px-5 px-3 lg:px-24 flex 
    flex-col dark:bg-slate-700 pt-[50px]
    pb-[30px] text-[#212245]'>
-     <div className='dark:text-[#b4b3b3] grid grid-cols-1 lg:grid-cols-2'>
+     <div className='dark:text-[#b4b3b3] grid grid-cols-1 lg:grid-cols-2 '>
     <div className='grid grid-cols-1 md:grid-cols-2 items-center md:space-x-5 xl:space-x-11'>
         <div className='flex flex-col space-y-3'>
             <img className='h-14 w-14' src='https://food-delivery-ecommerce-app.netlify.app/static/media/res-logo.2f9021c4.png'
@@ -57,7 +57,7 @@ function Footer() {
 
     </div>
     </div>
-    {/* <div className=' grid grid-cols-1 md:grid-cols-2 mt-8 space-y-3 md:space-y-0'>
+    <div className=' grid grid-cols-1 md:grid-cols-2 mt-8 space-y-3 md:space-y-0'>
         <p className='text-[14px] md:text-[16px]
          text-[#fd2020] dark:text-[#777777]'>Copyright - 2022, website made by Muhibur Rahman. All Rights Reserved.</p>
         <div className='flex items-center space-x-1 sm:space-x-5'>
@@ -71,7 +71,7 @@ function Footer() {
 
             </div>
         </div>
-    </div> */}
+    </div>
    </div>
   )
 }
