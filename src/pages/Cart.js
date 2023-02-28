@@ -8,7 +8,7 @@ function Cart() {
    Your Cart Here
       </div>
       <div className='flex items-center text-center flex-col space-y-4'>
-        <h1 className='font-bold text-[30px] '>Cart Is Empty</h1>
+        <h1 className='font-bold text-[30px] dark:text-[#777777]'>Cart Is Empty</h1>
         <button className='bg-[#fd2020] py-2 px-3 text-[17px] text-white'>No Item Selected</button>
       </div>
       <div className='mt-11'>

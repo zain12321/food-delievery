@@ -8,6 +8,17 @@ import { Link } from 'react-router-dom'
 function Header({darkTheme, setDarkTheme}) {
     const [active, setActive] = useState('home');
     const [menu, setMenu] = useState();
+
+    const [showMenu, setShowMenu] = useState(false);
+
+    const handleClick = () => {
+      setShowMenu(!showMenu);
+    };
+  
+    const handleMenuClose = () => {
+      setShowMenu(false);
+    };
+
   return (
     <div className='flex z-20 items-center justify-between w-screen px-4 md:px-12 lg:px-24 shadow-sm bg-white
      dark:bg-slate-700 dark:text-white py-2 fixed'>
@@ -58,7 +69,7 @@ function Header({darkTheme, setDarkTheme}) {
                     
             </ul>
             </div> : ''}
-           <div className='flex items-center relative'>
+           <div className='flex items-center relative' onClick={handleClick}>
                     <p className='bg-red-600 absolute bottom-4 left-4
                      text-white font-bold py-[1px] text-center px-1 text-[13px] rounded-full'>0</p>
                <BsBucket className='h-icons'/>
@@ -69,6 +80,18 @@ function Header({darkTheme, setDarkTheme}) {
         </p>
 
         </div>
+        {showMenu && (
+        <div className="absolute right-0 top-0 text-black px-2 py-2 h-screen bg-gray-200 border-gray-300 border">
+          <div className="bg-[#fd2020] h-8 cursor-pointer w-8 flex items-center justify-center text-white rounded-full" onClick={handleMenuClose}>
+            X
+          </div>
+          <ul className='px-11 mt-9 space-y-2'>
+            <li className='flex font-bold text-[#212245] flex-col items-center'>Your Cart Here</li>
+            <button className='bg-[#fd2020] px-8 py-2 rounded-md text-white'>No Item Select</button>
+    
+          </ul>
+        </div>
+      )}
 
     </div>
   )

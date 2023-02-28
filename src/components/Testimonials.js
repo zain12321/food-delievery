@@ -7,7 +7,7 @@ function Testimonials() {
         <div className='space-y-3 flex flex-col pt-11'> 
             <div>
                 <p className='text-[#fd2020] text-[25px] font-bold'>Testimonials</p>
-                <h1 className='text-[25px] md:text-[35px] pop font-bold
+                <h1 className='text-[25px] dark:text-[#777777] md:text-[35px] pop font-bold
                 '>What our <span className='text-[#fd2020]'>customers</span> are saying
 </h1>
 <p className='text-[#777777] text-[19px]'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio quasi
