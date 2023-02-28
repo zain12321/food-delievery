@@ -24,6 +24,14 @@
         py-2 sm:px-2 hover:bg-white hover:text-black max-w-[75px] 
         sm:max-w-[90px] md:max-w-[100px] rounded-xl;
     }
+    .footer-i{
+        @apply h-5 w-5;
+    }
+    .footer-l{
+        @apply bg-[#fd2020] h-8 w-8 flex items-center
+        justify-center rounded-full text-white;
+    }
+
     .pop-i{
         @apply text-yellow-500 hidden sm:flex;
     }

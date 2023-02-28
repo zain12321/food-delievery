@@ -5,6 +5,7 @@ import Service from './Service'
 import Popular from './Popular'
 import Tasty from './Tasty'
 import Testimonials from './Testimonials'
+import Footer from './Footer'
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
         <Popular/>
         <Tasty/>
         <Testimonials/>
+        <Footer/>
     </div>
   )
 }
