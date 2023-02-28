@@ -29,8 +29,10 @@ function Message() {
         </div>
         </div>
         {openBox ? 
-            <div className='bg-gray-200 max-w-[310px] md:max-w-[350px] flex flex-col justify-between shadow-2xl border-[#333]
-             min-h-[150px] lg:min-h-[250px] xl:min-h-[350px]  bottom-[170px] md:bottom-[70px] xl:bottom-[120px] right-3 lg:right-8
+            <div className='bg-gray-200 max-w-[310px] md:max-w-[350px] flex flex-col 
+            justify-between shadow-2xl border-[#333]
+             min-h-[350px] lg:min-h-[250px] xl:min-h-[350px]
+              bottom-[170px] md:bottom-[70px] xl:bottom-[120px] right-3 lg:right-8
          fixed z-50 rounded-tl-md rounded-tr-md'>
                       <div className='bg-[#fd2020] text-[20px] text-white font-bold px-2 py-4 
                       rounded-tl-md rounded-tr-md' >
