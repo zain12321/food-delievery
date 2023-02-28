@@ -1,23 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Header from './components/Header';
+import React, {useState} from 'react'
+import Section from './components/Section';
+import { BrowserRouter as Router, Routes,Route } from 'react-router-dom';
+import Cart from './pages/Cart';
+import Contact from './pages/Contact';
+import Foods from './pages/Foods';
+import Home from './components/Home';
+import Message from './components/Message';
 function App() {
+  const [darkTheme, setDarkTheme] = useState();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={darkTheme ? 'dark' : ''}>
+      <div className='dark:min-h-screen dark:bg-slate-800'>
+      <Header darkTheme={darkTheme} setDarkTheme={setDarkTheme}/>
+          <Routes>
+                   <Route exact path='/' element={<Home/>}/> 
+                   <Route path='contact' element={<Contact/>}/> 
+                   <Route path='foods' element={<Foods/>}/> 
+          </Routes>
+        <Message/>
+
+      </div>
     </div>
   );
 }
