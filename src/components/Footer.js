@@ -63,12 +63,19 @@ function Footer() {
         <div className='flex items-center space-x-1 sm:space-x-5'>
             <p className='dark:text-[#777777]'>Follow:</p>
            <div className='flex items-center space-x-3'>
+           <a href="https://www.facebook.com/profile.php?id=100077823431745" target="_blank" rel="noopener noreferrer">
            <p className='footer-l'><FaFacebookF className='footer-i'/></p>
+      </a>
+      <a href="https://www.linkedin.com/in/zain-fiaz-51316b233" target="_blank" rel="noopener noreferrer">
+            <p className='footer-l'><FaLinkedinIn className='footer-i'/></p>
+           </a>
+           <a href="https://github.com/zain12321" target="_blank" rel="noopener noreferrer">
+            <p className='footer-l'><BsGithub className='footer-i'/></p>
+           </a>
             <p className='footer-l'><AiOutlineTwitter className='footer-i'/></p>
             <p className='footer-l'><IoLogoGoogle className='footer-i'/></p>
-            <p className='footer-l'><FaLinkedinIn className='footer-i'/></p>
-            <p className='footer-l'><BsGithub className='footer-i'/></p>
-
+            
+           
             </div>
         </div>
     </div>

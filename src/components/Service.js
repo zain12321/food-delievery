@@ -30,7 +30,7 @@ we will <span className='text-[#df2020]'>take care</span></h1>
 <span className='text-[15px] font-bold text-[#777777] text-center'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, officiis?<br/>
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, eius.</span>
        </div>
-       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mt-14'>
+       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mt-14 space-y-6 sm:space-y-0'>
           {services.map((item) => {
             return (
                 <div className='flex flex-col items-center space-y-4 dark:text-[#777777]'>

@@ -15,7 +15,7 @@ function Popular() {
 	
   return (
     <div className='md:mx-12 xl:mx-44 mx-4'>
-      <h1 className='text-center py-7 pop text-[34px] font-bold'>Popular Food</h1>
+      <h1 className='text-center py-7 pop text-[34px] dark:text-[#777777] font-bold'>Popular Food</h1>
       <div className='bg-[#fd2020] text-white rounded-lg py-3
      px-1 sm:px-4 flex items-center justify-center my-4 '>
       <ul className=' grid 
