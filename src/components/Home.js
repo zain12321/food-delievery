@@ -4,7 +4,7 @@ import Card from './Card'
 import Service from './Service'
 import Popular from './Popular'
 import Tasty from './Tasty'
-import SlidersTest from './SlidersTest'
+import Testimonials from './Testimonials'
 
 function Home() {
   return (
@@ -14,7 +14,7 @@ function Home() {
         <Service/>
         <Popular/>
         <Tasty/>
-        <SlidersTest/>
+        <Testimonials/>
     </div>
   )
 }
