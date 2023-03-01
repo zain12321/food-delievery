@@ -44,7 +44,7 @@ function Section() {
               className="p-2
  text-[#fff] rounded-full bg-[#DF2020]
 h-8 w-8"
-            />
+    />
             <span className="text-[#212245] dark:text-[#777777] font-bold text-[15px]">
               100% secure checkout
             </span>

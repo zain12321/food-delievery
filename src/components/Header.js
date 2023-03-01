@@ -160,7 +160,7 @@ function Header({ darkTheme, setDarkTheme }) {
                 Your Cart Quantity
                 <span
                   className="bg-white rounded-full flex items-center
-          justify-center text-[#212245] px-5 py-3
+          justify-center text-[#212245] px-4 py-2
          "
                 >
                   {carts.length}
