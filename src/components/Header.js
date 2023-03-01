@@ -143,7 +143,7 @@ function Header({ darkTheme, setDarkTheme }) {
         >
           <div
             className="bg-[#fd2020] fixed h-8 cursor-pointer w-8 flex items-center
-             justify-center text-white rounded-full"
+             justify-center text-white rounded-full mx-1"
             onClick={handleMenuClose}
           >
             X
