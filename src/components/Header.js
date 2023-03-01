@@ -142,7 +142,7 @@ function Header({ darkTheme, setDarkTheme }) {
         overflow-y-auto h-screen dark:bg-slate-600 bg-gray-200 border-gray-300 border"
         >
           <div
-            className="bg-[#fd2020] h-8 cursor-pointer w-8 flex items-center
+            className="bg-[#fd2020] fixed h-8 cursor-pointer w-8 flex items-center
              justify-center text-white rounded-full"
             onClick={handleMenuClose}
           >
