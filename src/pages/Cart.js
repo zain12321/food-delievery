@@ -19,7 +19,7 @@ function Cart() {
           )}
         </h1>
         {carts.length >= 1 ? (
-          <p className="font-bold text-[23px]">Carts Item : {carts.length}</p>
+          <p className="font-bold text-[23px] dark:text-[#777777]">Carts Item : {carts.length}</p>
         ) : (
           <button className="bg-[#fd2020] py-2 px-3 text-[17px] text-white">
             No Item Selected
