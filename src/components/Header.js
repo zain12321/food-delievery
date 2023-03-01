@@ -139,16 +139,17 @@ function Header({ darkTheme, setDarkTheme }) {
       {showMenu && (
         <div
           className="absolute right-0 top-0 text-black sm:px-2 py-2 
-        overflow-y-auto h-screen bg-gray-200 border-gray-300 border"
+        overflow-y-auto h-screen dark:bg-slate-600 bg-gray-200 border-gray-300 border"
         >
           <div
-            className="bg-[#fd2020] h-8 cursor-pointer w-8 flex items-center justify-center text-white rounded-full"
+            className="bg-[#fd2020] h-8 cursor-pointer w-8 flex items-center
+             justify-center text-white rounded-full"
             onClick={handleMenuClose}
           >
             X
           </div>
           <ul className="px-11 mt-9 space-y-2">
-            <li className="flex font-bold text-[#212245] text-[24px] flex-col items-center">
+            <li className="flex font-bold text-[#212245] dark:text-[#fff] text-[24px] flex-col items-center">
               Your Cart Here
             </li>
 

@@ -21,13 +21,14 @@ function Foods() {
   };
 
   return (
-    <div className="pt-[90px] ">
+    <div className="pt-[90px]">
       <div className="common__section my-3 flex items-center justify-center text-white font-bold text-[35px]">
         All Foods Here
       </div>
       <div className="md:mx-12 sm:mx-6 mx-3 lg:mx-20 xl:mx-24">
         <div className="md:flex items-center justify-between space-x-5">
-          <div className="flex border-[#383a7a] flex-1 py-3 px-3 my-3 border-2 items-center rounded-full justify-between">
+          <div className="flex border-[#383a7a] flex-1 py-3 px-3 my-3
+           border-2 items-center rounded-full justify-between">
             <input
               className="flex-1 px-2 dark:text-[#fff] bg-transparent dark:placeholder:text-[#fff] outline-none placeholder:text-[17px] placeholder:text-[#333] 
         font-medium "
