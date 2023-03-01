@@ -14,7 +14,7 @@ const PopularItem = [
     {
         id:3,
         image:'https://food-delivery-ecommerce-app.netlify.app/static/media/product_3.1.9c207cdf.jpg',
-        title:'Margherita Cheese Burger',
+        title:'Royal Burger',
         price:'$24'
     },
     {

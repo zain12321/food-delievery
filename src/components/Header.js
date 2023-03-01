@@ -5,11 +5,12 @@ import {BsBucket} from 'react-icons/bs'
 import { MdOutlineLightMode,MdDarkMode } from 'react-icons/md'
 import {HiMenu} from 'react-icons/hi'
 import { Link } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 function Header({darkTheme, setDarkTheme}) {
     const [active, setActive] = useState('home');
     const [menu, setMenu] = useState();
-
-    const [showMenu, setShowMenu] = useState(false);
+ const {carts} = useSelector((elem)=>elem.user)
+     const [showMenu, setShowMenu] = useState(false);
 
     const handleClick = () => {
       setShowMenu(!showMenu);
@@ -69,9 +70,9 @@ function Header({darkTheme, setDarkTheme}) {
                     
             </ul>
             </div> : ''}
-           <div className='flex items-center relative' onClick={handleClick}>
+           <div className='flex items-center cursor-pointer relative' onClick={handleClick}>
                     <p className='bg-red-600 absolute bottom-4 left-4
-                     text-white font-bold py-[1px] text-center px-1 text-[13px] rounded-full'>0</p>
+                     text-white font-bold py-[1px] text-center px-1 text-[13px] rounded-full'>{carts.length}</p>
                <BsBucket className='h-icons'/>
                </div>
             <CgProfile className='h-icons'/>
@@ -81,14 +82,33 @@ function Header({darkTheme, setDarkTheme}) {
 
         </div>
         {showMenu && (
-        <div className="absolute right-0 top-0 text-black px-2 py-2 h-screen bg-gray-200 border-gray-300 border">
+        <div className="absolute right-0 top-0 text-black px-2 py-2 overflow-y-auto h-screen bg-gray-200 border-gray-300 border">
           <div className="bg-[#fd2020] h-8 cursor-pointer w-8 flex items-center justify-center text-white rounded-full" onClick={handleMenuClose}>
             X
           </div>
           <ul className='px-11 mt-9 space-y-2'>
-            <li className='flex font-bold text-[#212245] flex-col items-center'>Your Cart Here</li>
-            <button className='bg-[#fd2020] px-8 py-2 rounded-md text-white'>No Item Select</button>
-    
+            <li className='flex font-bold text-[#212245] text-[24px] flex-col items-center'>Your Cart Here</li>
+
+           
+         {carts.length >= 1 ? <div className='text-center text-[19px] flex justify-between items-center bg-green-500 py-2 px-3 rounded-md text-white
+         '>Your Cart Here<span className='bg-white rounded-full flex items-center
+          justify-center text-[#212245] px-5 py-3
+         '>{carts.length}</span></div> :
+          <button className='bg-[#fd2020] px-8 py-2 rounded-md text-white'>No Item Select</button>  }   
+            <div className='grid mt-8 grid-cols-1 gap-3'>
+     {carts?.map((elem) => {
+    const {title,price,image} = elem;
+	return (
+<div className='border-2 flex space-x-3 space-y-3 items-center
+mx-2 max-w-[300px] md:max-w-[350px] py-4 border-gray-200 bg-gray-100 rounded-md px-3'>
+<img className='w-20 h-20 hover:scale-110 cursor-pointer translate-y-2 transition duration-500' src={image} alt='' />
+<p className='text-[#212245] font-bold text-[15px]'>{title}</p>
+<p className='flex items-center justify-center px-3'>
+<p className='text-[#fd2020] font-bold text-[16px]'>{price}</p>
+</p>
+</div>
+  )})}
+     </div>
           </ul>
         </div>
       )}

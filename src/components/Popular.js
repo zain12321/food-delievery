@@ -3,7 +3,11 @@ import PopularItem from '../data';
 import {FaHamburger} from 'react-icons/fa'
 import { IoMdPizza } from 'react-icons/io';
 import {GiSlicedBread} from 'react-icons/gi'
+import { useDispatch } from 'react-redux';
+import {AddCart} from '../redux/cartItem'
+
 function Popular() {
+  const dispatch = useDispatch()
 	const [item, setItem] = useState(PopularItem);
 
   const filterItem = (CategoryItem) => {
@@ -32,7 +36,7 @@ function Popular() {
       
      <div className='grid sm:grid-cols-2 grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3'>
      {item?.map((elem) => {
-    const { title,price,image} = elem;
+    const {title,price,image} = elem;
 	return (
 <div className='border-2 flex flex-col space-y-3 items-center
 mx-2 max-w-[300px] md:max-w-[350px] py-4 border-gray-200 bg-gray-100 '>
@@ -41,7 +45,8 @@ mx-2 max-w-[300px] md:max-w-[350px] py-4 border-gray-200 bg-gray-100 '>
 <p className='text-[#212245] font-bold text-[18px]'>{title}</p>
 <p className='flex items-center justify-between w-full px-3'>
 <p className='text-[#fd2020] font-bold text-[22px]'>{price}</p>
-<button className='bg-[#fd2020] text-white font-bold rounded-ms px-3 py-2'>Add To Cart</button>
+<button className='bg-[#fd2020] text-white font-bold rounded-ms px-3 py-2'
+onClick={() => dispatch(AddCart(elem))}>Add To Cart</button>
 </p>
 </div>
   )})}
