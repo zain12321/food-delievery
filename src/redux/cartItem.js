@@ -12,6 +12,7 @@ const cartItem = createSlice({
     AddCart: (state, action) => {
       state.carts.push(action.payload);
     },
+
   },
 });
 

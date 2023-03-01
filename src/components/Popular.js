@@ -64,7 +64,7 @@ mx-2 max-w-[300px] md:max-w-[350px] py-4 border-gray-200 bg-gray-10"
                 src={image}
                 alt=""
               />
-              <p className="text-[#212245] font-bold text-[18px]">{title}</p>
+              <p className="text-[#212245] dark:text-[#777777] font-bold text-[18px]">{title}</p>
               <p className="flex items-center justify-between w-full px-3">
                 <p className="text-[#fd2020] font-bold text-[22px]">{price}</p>
                 <button

@@ -1,9 +1,10 @@
 import React from "react";
 import Footer from "../components/Footer";
-import { useSelector } from "react-redux";
+import {  useSelector } from "react-redux";
 
 function Cart() {
   const { carts } = useSelector((elem) => elem.user);
+  
   return (
     <div className="pt-[90px]">
       <div className="common__section my-3 flex items-center justify-center text-white font-bold text-[35px]">
@@ -40,9 +41,10 @@ mx-2 max-w-[300px] md:max-w-[350px] py-4 border-gray-200 bg-gray-100"
                 alt=""
               />
               <p className="text-[#212245] font-bold text-[18px]">{title}</p>
-              .com
+              
               <p className="flex items-center justify-center px-3">
-                <p className="text-[#fd2020] font-bold text-[22px]">{price}</p>
+                <p className="text-[#fd2020] font-bold text-[22px]"
+       >{price}</p>
               </p>
             </div>
           );
