@@ -82,7 +82,8 @@ function Header({darkTheme, setDarkTheme}) {
 
         </div>
         {showMenu && (
-        <div className="absolute right-0 top-0 text-black px-2 py-2 overflow-y-auto h-screen bg-gray-200 border-gray-300 border">
+        <div className="absolute right-0 top-0 text-black sm:px-2 py-2 
+        overflow-y-auto h-screen bg-gray-200 border-gray-300 border">
           <div className="bg-[#fd2020] h-8 cursor-pointer w-8 flex items-center justify-center text-white rounded-full" onClick={handleMenuClose}>
             X
           </div>
@@ -100,8 +101,8 @@ function Header({darkTheme, setDarkTheme}) {
     const {title,price,image} = elem;
 	return (
 <div className='border-2 flex space-x-3 space-y-3 items-center
-mx-2 max-w-[300px] md:max-w-[350px] py-4 border-gray-200 bg-gray-100 rounded-md px-3'>
-<img className='w-20 h-20 hover:scale-110 cursor-pointer translate-y-2 transition duration-500' src={image} alt='' />
+ max-w-[300px] md:max-w-[350px] py-4 border-gray-200 bg-gray-100 rounded-md px-3'>
+<img className='w-12 sm:w-20 h-12 sm:h-20 hover:scale-110 cursor-pointer translate-y-2 transition duration-500' src={image} alt='' />
 <p className='text-[#212245] font-bold text-[15px]'>{title}</p>
 <p className='flex items-center justify-center px-3'>
 <p className='text-[#fd2020] font-bold text-[16px]'>{price}</p>
