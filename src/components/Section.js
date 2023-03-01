@@ -3,6 +3,7 @@ import DeliveryGirl from "../assets/delivergirl.png";
 import { AiFillCar } from "react-icons/ai";
 import { MdOutlineSystemSecurityUpdateGood } from "react-icons/md";
 import { RiArrowRightSLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
 function Section() {
   return (
     <div className="grid pt-32 lg:pt-24 grid-cols-1 mx-4 md:mx-12 lg:mx-24 lg:grid-cols-2 items-center">
@@ -31,12 +32,14 @@ function Section() {
           >
             Order Now <RiArrowRightSLine className="h-5 w-5" />
           </button>
-          <button
-            className="py-2 px-4 border border-[#DF2020] 
- text-black dark:text-white font-bold rounded-sm"
+         <Link to='/foods' className="py-2 px-4 border border-[#DF2020] 
+ text-black dark:text-white font-bold rounded-sm text-center"
           >
+         <button
+            className="">
             See All Foods
           </button>
+         </Link> 
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 space-y-5 sm:space-y-0 pt-5">
           <p className="flex items-center space-x-3">
